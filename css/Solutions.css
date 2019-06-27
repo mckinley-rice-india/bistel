@@ -1,0 +1,115 @@
+.solutions-banner-card-header {
+    color: white;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.solutions-nav-background {
+    background-image: url('../images/solutions-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.solutions-banner-card-title {
+    font-size: 25px;
+    font-family: Roboto;
+    margin-top: 50px;
+}
+
+.solutions-banner-card-text {
+    font-size: 16px;
+}
+
+.solutions-main-content-card-title {
+    color: #0044AA;
+    font-size: 45px;
+    font-family: Roboto;
+    margin-top: 50px;
+    line-height: 1.2;
+}
+
+.solutions-main-content-card-subtitle {
+    color: #0044AA;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.solutions-main-content-card-text {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.solutions-main-content-card-subcard-title {
+    font-size: 35px;
+    color: #0044AA;
+    font-family: Roboto;
+    line-height: 1.2;
+}
+
+.solutions-main-content-card-subcard-subtitle {
+    font-size: 18px;
+    color: #0044AA;
+    line-height: 1.2;
+}
+
+.solutions-card-btn {
+    width: 110px;
+    border-radius: 50px;
+    height: 27px;
+    font-size: 10px;
+    color: white;
+    background-color: #48CDFF;
+    vertical-align: bottom;
+    align-self: auto;
+    margin-bottom: 30px;
+}
+
+.solutions-card-section-line {
+    height: 2px;
+    width: 40px;
+    background: #0044AA;
+}
+
+.solutions-phase-title {
+    font-size: 35px;
+    font-family: Roboto;
+    line-height: 1.2;
+}
+
+.fa-facebook {
+    background: #95A5B9;
+    color: #11223A;
+    padding: 5px;
+    border-radius: 70%;
+}
+
+.fa-linkedin {
+    background: #95A5B9;
+    color: #11223A;
+    padding: 5px;
+    border-radius: 70%;
+}
+
+.fa-instagram {
+    background: #95A5B9;
+    color: #11223A;
+    padding: 5px;
+    border-radius: 70%;
+}
+
+
+.fa-twitter {
+    background: #95A5B9;
+    color: #11223A;
+    border-radius: 70%;
+    padding: 5px;
+}
+
+.fa-youtube {
+    background: #95A5B9;
+    color: #11223A;
+    border-radius: 70%;
+    padding: 5px;
+}

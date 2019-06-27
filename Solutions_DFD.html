@@ -1,0 +1,709 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--For Mega Menu-->
+
+   
+    <script>
+
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /* Make an HTTP request using the attribute value as the file name: */
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /* Remove the attribute, and call this function once more: */
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /* Exit the function: */
+                    return;
+                }
+            }
+        }
+    </script>
+
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.dmenu.js"></script>
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/Footer.css" rel="stylesheet" media="all">
+    <!-- <link href="css/Solutions_Detect.css" rel="stylesheet" media="all"> -->
+    <link href="css/Solutions_DFD.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/demo.css" />
+    <link rel="stylesheet" href="css/jquery.dmenu.css" />
+    <meta name="author" content="www.frebsite.nl" />
+    <style>
+			.header-menu
+			{
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+			.dm-menu
+			{
+				
+				--dm-color: #fff;
+				--dm-item-current-bg: #fff;
+				--dm-item-current-color: #889;
+				
+				--dm-item-hover-color: #FF8822;
+			}
+			.header-slider
+			{
+				height: 300px;
+            }
+            #menu ul li a{
+                text-align : left;
+            }
+		</style>
+</head>
+
+<body>
+
+    <!--Header Begins-->
+
+    <header class="header">
+
+        <div class="solutions-detect-nav-background">
+
+            <div style="width:80%; margin:0 auto">
+
+                <!--Top Nav-->
+
+                
+                <nav id="menu" class="dm-menu dm-menu_submenu dm-menu_item-bg dm-menu_item-subindicator dm-menu_subitem-bg dm-menu_submenu-shadow">
+                    <a href="#" style="background-image: url(img/logo.png)"></a>
+                    <ul>
+                            <div class="top-text" style="float: left;"><a href="home.html">BISTel</a></div>
+                        <li class="dm-item_submenu-mega dm-item_parent" data-dm-class="dm-item_submenu-mega dm-item_parent">
+                            <a href="All Industries.html" class="nav-text"  >Industries</a>
+                            <ul style="left : -153%">
+                                <li class="dm-item_parent dm-subitem_submenu-inline" data-dm-class="dm-item_parent dm-subitem_submenu-inline" style="background: #F4F5F6; margin:0px; padding:0px;">
+                                    <a href="All Industries.html" class="tab-top-text" style="color: #0044AA">All Industries</a>
+                                    <ul>
+                                        <a href="#" class="tab-text" style="color: gray">Digital manufacturing tools to better detect, analyze, and predict issues before they happen</a>
+                                    </ul>
+                                </li>
+                                <li class="dm-item_parent dm-subitem_submenu-inline" data-dm-class="dm-item_parent dm-subitem_submenu-inline">
+                                    <a href="SemiconductorAndElectronics.html" class="tab-top-text">Semiconductor & Electronics</a>
+                                    <ul>
+                                        <a href="#" class="tab-text" style="color: gray">Digital manufacturing tools to better detect, analyze, and predict issues before they happen</a>
+                                      
+                                    </ul>
+                                    <a href="#" class="tab-top-text">Flat Panel Display</a>
+                                    <ul>
+                                        <a href="#" class="tab-text" style="color: gray">BISTel helps flat panel display manufacturers maximize their competitiveness and profitability</a>
+                                      
+                                    </ul>
+                                    <a href="#" class="tab-top-text">Automotive</a>
+                                    <ul>
+                                       <a href="#" class="tab-text" style="color: gray">improving engineering productivity while cutting maintenance costs</a>
+                                      
+                                    </ul>
+                                    <a href="#" class="tab-top-text">Steel</a>
+                                    <ul>
+                                        <a href="#" class="tab-text" style="color: gray">Transforms steel plant operations to improve quality, reduces costs</a>
+                                      
+                                    </ul>
+                                    <a href="#" class="tab-top-text">Energy</a>
+                                    <ul>
+                                        <a href="#" class="tab-text" style="color: gray">Transforms steel plant operations to improve quality, reduces costs</a>
+                                      
+                                    </ul>
+                                </li>
+                              
+          
+          
+                                <li class="dm-item_parent dm-subitem_submenu-inline" data-dm-class="dm-item_parent dm-subitem_submenu-inline">
+                                    <a href="#" class="tab-top-text">Rechargeable Battery</a>
+                                    <ul>
+                                        <a href="#" class="tab-text" style="color: gray">Digital manufacturing tools to better detect, analyze, and predict issues before they happen</a>
+                                      
+                                    </ul>
+                                    <a href="#" class="tab-top-text">Electronics Assembly & PCB</a>
+                                    <ul>
+                                        <a href="#" class="tab-text" style="color: gray">BISTel helps flat panel display manufacturers maximize their competitiveness and profitability</a>
+                                      
+                                    </ul>
+                                    <a href="#" class="tab-top-text">LED</a>
+                                    <ul>
+                                        <a href="#" class="tab-text" style="color: gray">improving engineering productivity while cutting maintenance costs</a>
+                                      
+                                    </ul>
+                                    <a href="#" class="tab-top-text">Pharmaceutical</a>
+                                    <ul>
+                                        <a href="#" class="tab-text" style="color: gray">Transforms steel plant operations to improve quality, reduces costs</a>
+                                      
+                                    </ul>
+                                    
+                                </li>
+          
+          
+          
+          
+          
+                            </ul>
+                        </li>
+          
+          
+                        <li class="dm-item_submenu-mega dm-item_parent" data-dm-class="dm-item_submenu-mega dm-item_parent">
+                                <a href="Solutions.html" class="nav-text" >Solutions</a>
+                                <ul style="left : -410%">
+                                    <li class="dm-item_parent dm-subitem_submenu-inline" data-dm-class="dm-item_parent dm-subitem_submenu-inline" style="background: #F4F5F6; margin:0px; padding:0px;">
+                                        <a href="Solutions.html" class="tab-top-text" style="color: #0044AA">Solutions Overview</a>
+                                        <ul>
+                                            <a href="#" class="tab-text" style="color: gray">Market Leading, Award Winning Real-Time Fault</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dm-item_parent dm-subitem_submenu-inline" data-dm-class="dm-item_parent dm-subitem_submenu-inline">
+                                        <a href="Solution_Detect.html" class="tab-top-text">Detect</a>
+                                        <ul>
+                                            <a href="#" class="tab-text" style="color: gray">Market Leading, Award Winning Real-Time Fault</a>
+                                          
+                                        </ul>
+                                        <a href="#" class="tab-top-text">Analyze</a>
+                                        <ul>
+                                            <a href="#" class="tab-text" style="color: gray">Industry Leading ANALYTICS Keep Everything Under Control</a>
+                                          
+                                        </ul>
+                                        <a href="#" class="tab-top-text">Predict</a>
+                                        <ul>
+                                            <a href="#" class="tab-text" style="color: gray">AI Based PREDICTIVE ANALYTICS and PREDICTIVE MAINTAINENCE Make Downtime a Thing of the Past</a>
+                                          
+                                        </ul>
+                                        
+                                    </li>
+                                  
+          
+                                    <li class="dm-item_parent dm-subitem_submenu-inline" data-dm-class="dm-item_parent dm-subitem_submenu-inline">
+                                        <a href="Solutions_DFD.html" class="tab-top-text">DFD</a>
+                                        <ul>
+                                            <a href="#" class="tab-text" style="color: gray">Dynamic Fault Detection</a>
+                                          
+                                        </ul>
+                                        <a href="#" class="tab-top-text">eDataLyzer</a>
+                                        <ul>
+                                            <a href="#" class="tab-text" style="color: gray">Advanced Data Analytics</a>
+                                          
+                                        </ul>
+                                        <a href="#" class="tab-top-text">WQP</a>
+                                        <ul>
+                                            <a href="#" class="tab-text" style="color: gray">Wafer Quality Predictor</a>
+                                          
+                                        </ul>
+                                        
+                                    </li>
+          
+          
+                                    <li class="dm-item_parent dm-subitem_submenu-inline" data-dm-class="dm-item_parent dm-subitem_submenu-inline">
+                                            <a href="#" class="tab-top-text">EES</a>
+                                            <ul>
+                                                <a href="#" class="tab-text" style="color: gray">Equipment Engineering System</a>
+                                              
+                                            </ul>
+                                            <a href="#" class="tab-top-text">CM</a>
+                                            <ul>
+                                                <a href="#" class="tab-text" style="color: gray">Chamber Matching</a>
+                                              
+                                            </ul>
+                                            <a href="#" class="tab-top-text">HMP</a>
+                                            <ul>
+                                                <a href="#" class="tab-text" style="color: gray">Health Monitoring and Prediction</a>
+                                              
+                                            </ul>
+                                            
+                                        </li>
+          
+          
+                                </ul>
+                            </li>
+                      
+                            <li class="dm-item_submenu-mega dm-item_parent" data-dm-class="dm-item_submenu-mega dm-item_parent">
+                                    <a href="Resources.html" class="nav-text">Resources</a>
+                                    <ul style="left : -402%">
+                                        <li class="dm-item_parent dm-subitem_submenu-inline" data-dm-class="dm-item_parent dm-subitem_submenu-inline" style="background: #F4F5F6; margin:0px; padding:0px;">
+                                            <a href="Resources.html" class="tab-top-text" style="color: #0044AA">All Resources</a>
+                                            <ul>
+                                                <a href="#" class="tab-text" style="color: gray">Digital manufacturing tools to better detect, analyze, and predict issues before they happen</a>
+                                            </ul>
+                                        </li>
+                                        <li class="dm-item_parent dm-subitem_submenu-inline" data-dm-class="dm-item_parent dm-subitem_submenu-inline">
+                                            <a href="DownloadBrochure.html" class="tab-top-text">Brochure</a>
+                                            <ul>
+                                                <a href="#" class="tab-text" style="color: gray">Text~제품별 안내 자료임</a>
+                                              
+                                            </ul>
+                                            <a href="#" class="tab-top-text">Case Study</a>
+                                            <ul>
+                                                <a href="#" class="tab-text" style="color: gray">우리의 제품은 다양한 산업분야에 실제로 적용되고 있습니다.</a>
+                                              
+                                            </ul>
+                                            <a href="#" class="tab-top-text">Whitepapter</a>
+                                            <ul>
+                                                <a href="#" class="tab-text" style="color: gray">어떤 기능들이 있을까요??</a>
+                                              
+                                            </ul>
+                                            <a href="#" class="tab-top-text">Video</a>
+                                            <ul>
+                                                <a href="#" class="tab-text" style="color: gray">Webinna 다시보기 / Youtube 홍보자료 보기</a>
+                                              
+                                            </ul>
+                                           
+                                        </li>
+                                      
+          
+          
+                                        <li class="dm-item_parent dm-subitem_submenu-inline" data-dm-class="dm-item_parent dm-subitem_submenu-inline" style="margin:50px; background: #EFF3F6;">
+                                                <a href="#" style="color: #0044AA;font-size: 29px; text-align: left">새로운 자료</a>
+                                                <ul>
+                                                    <li><a href="#" class="tab-text" style="color: gray">새로운 자료가 나올때 마다 보내주길 바래? 요기에 가입해. 우리가 너의 이메일로 보내줄께. 너는 무료로 좋은 정보를 받아볼 수 있어.</a></li>
+                                                    <button type="button" class="btn btn-primary get-it-btn float-right">Get It</button>
+          
+                                                </ul>
+                                        </li>
+          
+          
+          
+          
+          
+                                    </ul>
+                                </li>
+                                
+                                
+                                <li class="dm-item_submenu-mega dm-item_parent" data-dm-class="dm-item_submenu-mega dm-item_parent">
+                                        <a href="News.html" class="nav-text">Newsroom</a>
+                                        <ul style="left : -460%">
+                                            <li class="dm-item_parent dm-subitem_submenu-inline" data-dm-class="dm-item_parent dm-subitem_submenu-inline" style="background: #F4F5F6; margin:0px; padding:0px;">
+                                                <a href="News.html" class="tab-top-text" style="color: #0044AA">Newsroom</a>
+                                                <ul>
+                                                    <a href="#" class="tab-text" style="color: gray">Digital manufacturing tools to better detect, analyze, and predict issues before they happen</a>
+                                                </ul>
+                                            </li>
+                                            <li class="dm-item_parent dm-subitem_submenu-inline" data-dm-class="dm-item_parent dm-subitem_submenu-inline">
+                                                <a href="PressRelease.html" class="tab-top-text">Press Release</a>
+                                                <ul>
+                                                    <a href="#" class="tab-text" style="color: gray">Get the latest news on bistel and our product and services</a>
+                                                  
+                                                </ul>
+                                                <a href="#" class="tab-top-text">News</a>
+                                                <ul>
+                                                    <a href="#" class="tab-text" style="color: gray">비스텔이 전하는 소식</a>
+                                                  
+                                                </ul>
+                                                <a href="#" class="tab-top-text">Event</a>
+                                                <ul>
+                                                    <a href="#" class="tab-text" style="color: gray">Visit BISTel at tradeshows, seminars, workshops, webinar and technical symposia.</a>
+                                                  
+                                                </ul>
+                                                <a href="#" class="tab-top-text">The Wire</a>
+                                                <ul>
+                                                    <a href="#" class="tab-text" style="color: gray">News letter of BIstel, 등록하기</a>
+                                                  
+                                                </ul>
+                                               
+                                            </li>
+                                          
+          
+          
+                                            <li class="dm-item_parent dm-subitem_submenu-inline" data-dm-class="dm-item_parent dm-subitem_submenu-inline" style="margin:30px; background: #48CDFF;">
+                                                    <a href="#" style="color:#fff;font-size: 35px; text-align: left;list-style-position:inside;
+                                                    word-wrap: break-word;
+                                                    overflow-wrap: break-word;
+                                                    white-space: normal !important; line-height: 1;">Stay Tuned To What’s Happening at BISTel</a>
+                                                    <ul>
+                                                        <li><a href="#" class="tab-text" style="color: #fff; text-align: left">We have lots of wonderful stories to show you, and look forward to sharing them with you. Check back for the latest timely information and interesting topics throughout the year.</a></li>
+                                                        <button type="button" class="btn btn-primary sign-up-btn float-right">Sign Up</button>
+          
+                                                    </ul>
+                                            </li>
+          
+          
+          
+          
+          
+                                        </ul>
+                                    </li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <li class="dm-item_submenu-mega dm-item_parent" data-dm-class="dm-item_submenu-mega dm-item_parent">
+                                        <a href="#" class="nav-text">Company</a>
+                                        <ul style="left : -610%">
+                                            <li class="dm-item_parent dm-subitem_submenu-inline" data-dm-class="dm-item_parent dm-subitem_submenu-inline" style="background: #F4F5F6; margin:0px; padding:0px;">
+                                                <a href="#" class="tab-top-text" style="color: #0044AA">Company</a>
+                                                <ul>
+                                                    <a href="#" class="tab-text" style="color: gray">Digital manufacturing tools to better detect, analyze, and predict issues before they happen</a>
+                                                    <a href="#" class="tab-text" style="color: gray; margin-top: 200px; font-size:30px">Global Headquarters</a>
+                                                    <a href="#" class="tab-text" style="color: gray"> BISTel Tower, 128 Baumoe-ro, Seocho-gu, Seoul, Korea 06754<br> Tel : 82 2 597 0911</a>
+                                                </ul>
+                                            </li>
+                                            <li class="dm-item_parent dm-subitem_submenu-inline" data-dm-class="dm-item_parent dm-subitem_submenu-inline">
+                                                <a href="#" class="tab-top-text" style="width:600px;"></a>
+                                             
+                                                <a href="#" class="tab-top-text">About BISTel</a>
+                                                <ul>
+                                                    <a href="#" class="tab-text" style="color: gray">회사소개글 / 비전, 신념 / Roadmap / Leadership CEO 한말씀</a>
+                                                  
+                                                </ul>
+                                                <a href="#" class="tab-top-text">Global Offices</a>
+                                                <ul>
+                                                    <a href="#" class="tab-text" style="color: gray">우리는 세계 곳곳에 사무실이 있어. 너는 가장 가까운 곳에 연락해서 우리의 서비스를 받을 수 있어</a>
+                                                  
+                                                </ul>
+                                                <a href="#" class="tab-top-text">Career</a>
+                                                <ul>
+                                                    <a href="#" class="tab-text" style="color: gray">Join the team with the skills and talent to make billions of lives better.</a>
+                                                  
+                                                </ul>
+                                                <ul>
+                                                    <div class="contact-tab">
+                                                        <div class="contact-text" style="color: #fff">Contact Us</div>
+                                                <div class="join-text" style="color: #fff; ">Join the team with the skills and talent to make billions of lives better.</div>
+                                                </div>
+                                                  
+                                                </ul>
+                                            </li>
+                                          
+          
+          
+          
+          
+          
+          
+          
+          
+                                        </ul>
+                                    </li>
+                                    <li><button type="button" class="btn btn-primary request-demo-btn">Request Demo</button></li>
+                                    <li><i class="material-icons" style="margin-top :30px; ">language</i></li>
+                                            <li><i class="material-icons" style="margin-top :30px; margin-left: 10px;">search</i></li>
+                    </ul>
+                    
+                </nav>
+                <!--Banner Area-->
+
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <h1 class="banner-header">Solutions</h1>
+                        <h4 class="banner-title">Dynamic Fault Detection (DFD)</h4>
+                        <p class="banner-text">Next-Generation Fault Detection Offers Full Trace Analysis Overcoming the
+                            Limitations of Legacy FDC Systems</p>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="banner-icon-text">Real-time full sensor trace analysis on all sensors</p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <p class="banner-icon-text">No limit modeling required</p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <p class="banner-icon-text">False alarm reduction by more than 10X</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="banner-img-container">
+                            <img src="./../images/DFD-Laptop.png" class="banner-laptop-img img-responsive">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <!--Header Ends-->
+
+    <!--Main Begins-->
+
+    <main>
+        <div style="width:80%; margin:0 auto">
+            <section class="section-1">
+
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3 class="section-1-title">Take a closer look</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="main-numbering">01</h4>
+                        <h4 class="main-content-title">Full Sensor Trace Fault Detection</h4>
+                        <p class="main-content-text">A traditional FDC system is typically set up to monitor only a
+                            segment
+                            of a sensor trace</p>
+                        <p class="main-content-text">DFD analyzes full trace of a sensor allowing it to identify all
+                            potential
+                            issues no matter how subtle they are</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./../images/DFD-design-img.png" class="banner-laptop-img img-responsive">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="main-numbering">02</h4>
+                        <h4 class="main-content-title">Real-time Notification of Sensor Alarms</h4>
+                        <p class="main-content-text">DFD alarm email notification contains a summary of the alarm
+                            including a link that takes user directly to the trace details</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./../images/DFD-design-img.png" class="banner-laptop-img img-responsive">
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="section-2">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="main-numbering">03</h4>
+                        <h4 class="main-content-title">Effortless Analysis – Alarm Summary Dashboard</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./../images/DFD-design-img.png" class="banner-laptop-img img-responsive">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="main-content-blue-text">Step 1</h3>
+                        <h3 class="main-content-blue-text">DFD Alarm Trend and Alarm Summary Dashboard</h3>
+                        <br>
+                        <h3 class="main-content-blue-text">Step 2</h3>
+                        <h3 class="main-content-blue-text">DFD Alarm Trace Chart Dashboard</h3>
+                        <br>
+                        <h3 class="main-content-blue-text">Step 3</h3>
+                        <h3 class="main-content-blue-text">Configurable Trace Chart Options</h3>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="section-3">
+
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3 class="section-3-title">Use Case</h3>
+                        <p class="section-3-title-subtext">Comprehensive Fault Detection</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="main-content-title">Full Sensor Trace Coverage</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6" style="padding-top: 2%;">
+                        <h4 class="main-content-blue-text">Traditional FDC</h4>
+                        <p class="main-content-text">SPC limits were set up to monitor recipe step 3, NO ALARMS were
+                            triggered during this process</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./../images/DFD-line-graph.png" class="banner-laptop-img img-responsive">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6" style="padding-top: 2%;">
+                        <h4 class="main-content-blue-text">BISTel DFD (Dynamic Fault Detection)</h4>
+                        <p class="main-content-text">By examining the full sensor trace, DFD was able to identify issues
+                            in all recipe steps and execute the appropriate alarms</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./../images/DFD-line-graph.png" class="banner-laptop-img img-responsive">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="main-content-title">Detection of Subtle Issues</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6" style="padding-top: 2%;">
+                        <h4 class="main-content-blue-text">Traditional FDC</h4>
+                        <p class="main-content-text">A. Abnotmal tmepreature profile for wafers #14, # 15, #16</p>
+                        <p class="main-content-text">B. Wafers passed SPC Limits</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./../images/DFD-line-graph-2.png" class="banner-laptop-img img-responsive">
+                        <!-- <img src="./../images/DFD-line-graph-3.png" class="banner-laptop-img img-responsive"> -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6" style="padding-top: 5%;">
+                        <h4 class="main-content-blue-text">BISTel DFD (Dynamic Fault Detection)</h4>
+                        <p class="main-content-text">DFD easily identified the abnormality using trace analysis</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./../images/DFD-line-graph-4.png" class="banner-laptop-img img-responsive">
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="section-4">
+
+
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!--Main Ends-->
+
+    <!--Footer Starts-->
+
+    <footer>
+
+        <div class="row justify-content-around row-footer footer-background">
+
+            <div class="col-md-2">
+                <h5 class="lead footer-title-text font-weight-bold">Industries</h5>
+                <div class="lead footer-text">All Industries</div>
+                <div class="lead footer-text">Semiconductors and Electronic Manufacturing</div>
+                <div class="lead footer-text small">Flat Panel Display</div>
+                <div class="lead footer-text">Automotive</div>
+                <div class="lead footer-text">Energy</div>
+                <div class="lead footer-text">Steel</div>
+                <div class="lead footer-text">LED Manufacturing</div>
+                <div class="lead footer-text">Rechargeable Battery</div>
+            </div>
+
+            <div class="col-md-2">
+                <h5 class="lead footer-title-text font-weight-bold">Solutions</h5>
+                <div class="lead footer-text">Solutions Overview</div>
+                <div class="lead footer-text">Detect</div>
+                <div class="lead footer-text">Analyze</div>
+                <div class="lead footer-text">Predict</div>
+                <div class="lead footer-text">DFD</div>
+                <div class="lead footer-text">eDataLyzer</div>
+                <div class="lead footer-text">CM</div>
+                <div class="lead footer-text">HMP</div>
+                <div class="lead footer-text">WQP</div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="lead footer-title-text font-weight-bold">Resources</h5>
+                        <div class="lead footer-text">All Resources</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="lead footer-title-text font-weight-bold">NewsRoom</h5>
+                        <div class="lead footer-text">NewsRoom Overview</div>
+                        <div class="lead footer-text">Press Release</div>
+                        <div class="lead footer-text">BISTel News</div>
+                        <div class="lead footer-text">Event</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <h5 class="lead footer-title-text font-weight-bold">Company</h5>
+                <div class="lead footer-text">About BISTel</div>
+                <div class="lead footer-text">Global Offices</div>
+                <div class="lead footer-text">Career</div>
+                <div class="lead footer-text">Contact Us</div>
+            </div>
+
+            <div class="col-md-3">
+                <h5 class="lead footer-title-text font-weight-bold">Select a Language</h5>
+                <div class="lead footer-text">English</div>
+                <div class="lead footer-text">Korean</div>
+                <div class="lead footer-text">Chinese</div>
+                <div class="lead footer-text">Japanese</div>
+
+                <p class="signup-title-footer font-weight-bold">Sign me up now</p>
+                <input type="text" class="form-control footer-text-input" id="userEmail" placeholder="Your Email Here">
+                <button type="button" class="btn footer-subscribe-btn float-right">Subscribe</button>
+
+            </div>
+
+        </div>
+
+        <!--Sub Footer-->
+
+        <div class="container-fluid">
+            <div class="row" style="background: url('Images/HomeFooter3Background.jpg');">
+
+                <div class="col-lg-6 col-md-8 col-sm-8 col-xs-12 offset-lg-2" style="text-align: center;">
+                    <p class="lead sub-footer-text">Copyright © 2000-2019 BISTel,Inc. &nbsp;&nbsp; All rights reserved.
+                        &nbsp;&nbsp;
+                        Privacy Notice | Subscription center</p>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12" style="text-align: center;">
+                    <div style="display: inline-block;">
+                        <a href="#" class="fa fa-facebook social-media-icons"></a>
+                        <a href="#" class="fa fa-twitter social-media-icons"></a>
+                        <a href="#" class="fa fa-instagram social-media-icons"></a>
+                        <a href="#" class="fa fa-linkedin social-media-icons"></a>
+                        <a href="#" class="fa fa-youtube social-media-icons"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <!--Footer Ends-->
+
+</body>
